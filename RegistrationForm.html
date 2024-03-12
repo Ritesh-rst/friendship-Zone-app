@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FriendShip Zone App</title>
+</head>
+<body>
+<header>
+<div>
+  <figure>
+   <img src="Friends.PNG" alt="friends photos" style="display:block">
+  </figure><br>
+  <P><h1 align="center">Friendship Zone</h1></P>
+</div>
+</header>
+<main>
+  <article>
+    <h2>Add your details to register</h2>
+    <form action="RegistrationConfirmation.html">
+      <label for="name"><b>Name:</b></label>
+      <input type="text" id="name" name="name"
+      placeholder="Enter your name" pattern="[a-z][A-Z]{3,}" required><br><br>
+
+      <label for="email"><b>Email:</b></label>
+      <input type="email" id="email" name="email" required
+      pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br><br>
+
+      <label for="age"><b>Age:</b></label>
+      <input type="number" id="age" name="age" min="18"pattern="[0 9]{18,}"><br><br>
+
+      <label for="Birthday"><b>Birth Day:</b></label>
+      <input type="date" name="Birthday" id="Birthday"><br><br>
+
+      <b>Gender:</b> 
+              <input type="radio" id="male" name="Gender" checked>
+              <label for="male">M</label>
+              <input type="radio" name="Gender" id="female">
+              <label for="female">F</label><br><br>
+
+      <b>About:</b>  
+      <textarea name="" id="" cols="100" rows="10"></textarea><br><br>
+
+      <label for="phone"><b>Phone:</b></label> <input type="tel" name="phone" id="phone" pattern="[0 9]"><br><br><br><br>
+
+      <b>Interested in:</b> 
+      <input type="checkbox" name="friendship" id="friendship">
+      <label for="friendship">Friendship</label>  
+      <input type="checkbox" name="dating" id="dating">
+      <label for="dating">Dating</label> 
+
+      <label for="attachment"><b>Attachment:</b></label> 
+      <input type="file" name="attachment" id="attachment"><br><br>
+    </form>
+<!--<input type="button" onClick="windiw.location.href='RegistrationConfirmation.html'" value="Register">
+      <input type="button" onClick="window.location.href='RegConfforAdmint.html'" value="Register as Admin"> -->
+
+  </article>
+</main>
+<footer>
+  <a href="RegistrationConfirmation.html">
+    <button>Register</button>
+  </a>&nbsp;
+  <a href="RegConfforAdmin.html">
+    <button>Register as Admin</button>
+  </a>
+</footer>
